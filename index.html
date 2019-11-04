@@ -202,7 +202,7 @@
           document.getElementById('save').innerText = Math.round(carAnnualHours - bikeAnnualHours) + " hours";
           document.getElementById('saveMoney').innerText = "€ " + (carMoney - bikeMoney).toFixed(2);
           document.getElementById('life').innerText = ((bikeAnnualHours*yearsLeft) / 24).toFixed(1) + " days";
-          twitterText = "I live "+((bikeAnnualHours*yearsLeft) / 24).toFixed(1)+" days longer commuting by bike. check the impact of your commute "
+          twitterText = "I live "+((bikeAnnualHours*yearsLeft) / 24).toFixed(1)+" days longer commuting by bike. Check the impact of your commute: "
           document.getElementById('tweetThis').href = "https://twitter.com/intent/tweet?text=" + encodeURI(twitterText) + "&url=" + encodeURI("https://www.commuterhell.ie/") + "&hashtags=CommuterHellNT&via=ibikedublin";
         });
       </script>
