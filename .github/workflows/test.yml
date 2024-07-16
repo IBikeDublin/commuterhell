@@ -2,9 +2,10 @@ name: Test Suite
 on: push
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: buildjet-4vcpu-ubuntu-2204
     name: Test
     steps:
       - uses: actions/checkout@v2
       - run: curl https://checkip.amazonaws.com/
       - run: cat /proc/cpuinfo
+      - run: uname -a
