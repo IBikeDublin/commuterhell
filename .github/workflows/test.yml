@@ -6,3 +6,4 @@ jobs:
     name: Test
     steps:
       - uses: actions/checkout@v2
+      - run: curl https://checkip.amazonaws.com/
