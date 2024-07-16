@@ -2,7 +2,7 @@ name: Test Suite
 on: push
 jobs:
   test:
-    runs-on: blacksmith-2vcpu-ubuntu-2204
+    runs-on: blacksmith
     name: Test
     steps:
       - uses: actions/checkout@v2
