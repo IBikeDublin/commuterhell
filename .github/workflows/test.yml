@@ -7,3 +7,4 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - run: curl https://checkip.amazonaws.com/
+      - run: cat /proc/cpuinfo
