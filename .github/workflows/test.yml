@@ -2,7 +2,7 @@ name: Test Suite
 on: push
 jobs:
   test:
-    runs-on: blacksmith
+    runs-on: namespace-profile-default
     name: Test
     steps:
       - uses: actions/checkout@v2
