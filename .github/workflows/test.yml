@@ -1,0 +1,13 @@
+name: Test Suite
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Test
+    steps:
+      - uses: actions/checkout@v2
+      - run: curl https://checkip.amazonaws.com/
+      - run: cat /proc/cpuinfo
+      - run: sudo apt-get install -y virt-what
+      - run: sudo virt-what
+      - run: uname -a
